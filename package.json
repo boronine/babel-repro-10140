@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.6.4",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+  	"build_broken": "node_modules/.bin/webpack --config webpack.config.broken.js",
+  	"build_workaround": "node_modules/.bin/webpack --config webpack.config.workaround.js",
+  	"build": "npm run build_broken && npm run build_workaround"
+  }
+}
